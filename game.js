@@ -266,10 +266,10 @@ Game.prototype.display = function(){
 
 	this.ctx.fillStyle = "white";
 	this.ctx.font="20px Oswald, sans-serif";
-	this.ctx.fillText("Score : "+ this.score, 10, 25);
-	this.ctx.fillText("Max Score : "+this.maxScore, 10, 50);
-	this.ctx.fillText("Generation : "+this.generation, 10, 75);
-	this.ctx.fillText("Alive : "+this.alives+" / "+Neuvol.options.population, 10, 100);
+	this.ctx.fillText("分数 : "+ this.score, 10, 25);
+	this.ctx.fillText("最高分 : "+this.maxScore, 10, 50);
+	this.ctx.fillText("遗传代数 : "+this.generation, 10, 75);
+	this.ctx.fillText("存活 : "+this.alives+" / "+Neuvol.options.population, 10, 100);
 
 	var self = this;
 	requestAnimationFrame(function(){
